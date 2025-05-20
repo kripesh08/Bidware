@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Bidware</string>
+    <string name="price_format">₹%.2f</string>
+    
+    <!-- AddSaleFragment strings -->
+    <string name="add_edit_sale">Add/Edit Sale</string>
+    <string name="add_rc_document">Add RC Document</string>
+    <string name="rc_document_added">RC Document Added ✓</string>
+    <string name="add_insurance_document">Add Insurance Document</string>
+    <string name="insurance_document_added">Insurance Document Added ✓</string>
+    <string name="brand_required">Brand is required</string>
+    <string name="model_required">Model is required</string>
+    <string name="year_required">Year is required</string>
+    <string name="kilometers_required">Kilometers driven is required</string>
+    <string name="base_price_required">Base price is required</string>
+    <string name="start_date_required">Start date is required</string>
+    <string name="end_date_required">End date is required</string>
+    <string name="add_image_required">Please add at least one image</string>
+    <string name="upload_rc_required">Please upload RC document</string>
+    <string name="upload_insurance_required">Please upload insurance document</string>
+    <string name="sale_created_success">Sale created successfully</string>
+    <string name="sale_creation_error">Error creating sale: %1$s</string>
+
+    <!-- MySales strings -->
+    <string name="my_sales">My Sales</string>
+    <string name="filter_pending">Pending</string>
+    <string name="filter_payment">Payment</string>
+    <string name="filter_in_auction">In Auction</string>
+    <string name="filter_completed">Done</string>
+    <string name="error_loading_sales">Error loading sales: %1$s</string>
+    <string name="no_upi_app">No UPI app found</string>
+    <string name="payment_title">Payment for Sale ID: %1$s</string>
+    <string name="admin_upi">8220872487@ibl</string>
+    <string name="admin_name">BidWare Admin</string>
+    
+    <!-- Accessibility descriptions -->
+    <string name="add_sale_button_description">Add new sale</string>
+</resources>

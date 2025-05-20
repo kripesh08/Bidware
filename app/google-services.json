@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "362617929281",
+    "project_id": "bidware-6b91b",
+    "storage_bucket": "bidware-6b91b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362617929281:android:0bee731ee15d2cb51b10c0",
+        "android_client_info": {
+          "package_name": "com.bidware"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHHRYRP55LXuZW6aNRHaRhl-YDZRBxaBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

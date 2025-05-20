@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="Home" />
+    <item
+        android:id="@+id/navigation_my_sales"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="My Sales" />
+    <item
+        android:id="@+id/navigation_wishlist"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="My Buys" />
+</menu>
+

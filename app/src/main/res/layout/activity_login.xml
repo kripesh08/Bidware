@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:background="@color/black">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="286dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/login">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BidWare"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:layout_marginTop="24dp"
+        android:fontFamily="cursive"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightGray"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightGray"/>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="end"
+        android:text="Forgot Password"
+        android:layout_gravity="center"
+        android:textColor="@color/lightBlue"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:minHeight="48dp"
+        android:text="LOGIN"
+        android:backgroundTint="@color/green"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/registerNow"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account yet? Register here"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

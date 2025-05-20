@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#4CAF50</color>
+    <color name="lightBlue">#ADD8E6</color>
+    <color name="lightGray">#D3D3D3</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="gray">#888888</color>
+    <color name="dark_gray">#2C2C2C</color>
+
+
+    <!-- Additional Colors -->
+    <color name="background_color">#121212</color>
+    <color name="search_background_color">@color/lightGray</color> <!-- Reused lightGray -->
+    <color name="hint_color">@color/lightGray</color> <!-- Reused lightGray -->
+    <color name="bottom_nav_text">#E0E0E0</color> <!-- Light gray text -->
+    <color name="accent_color">#FF4081</color>  <!-- Active tab text color -->
+    <color name="inactive_text">#A0A0A0</color>  <!-- Inactive tab text color -->
+    <color name="bottom_nav_bg">#121212</color>  <!-- Bottom nav background -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="nav_item_color">@color/colorAccent</color>  <!-- Bottom nav item color -->
+    <color name="primary_color">#FF6200EE</color>
+    <color name="primary_dark_color">#3700B3</color>
+    <color name="secondary_text_color">#757575</color>
+    <color name="status_pending">#FFA000</color>
+    <color name="status_approved">#2196F3</color>
+    <color name="status_active">#4CAF50</color>
+    <color name="status_ended">#757575</color>
+    <color name="status_payment">#FF9800</color>
+    <color name="status_completed">#9C27B0</color>
+    <color name="status_default">#757575</color>
+    
+    <!-- Sale Status Colors -->
+    <color name="colorPending">#FFA000</color>
+    <color name="colorApproved">#2196F3</color>
+    <color name="colorRejected">#F44336</color>
+    <color name="colorInAuction">#4CAF50</color>
+    <color name="colorSold">#9C27B0</color>
+    
+    <!-- Status colors used in SaleAdapter -->
+    <color name="status_in_auction">#4CAF50</color>
+    <color name="status_sold">#9C27B0</color>
+    <color name="status_expired">#757575</color>
+    <color name="status_waiting">#2196F3</color>
+    <color name="status_rejected">#F44336</color>
+    <color name="status_rejected_text">#FFFFFF</color>
+    <color name="status_rejected_background">#44F44336</color>
+    <color name="text_color">#FFFFFF</color>
+</resources>
