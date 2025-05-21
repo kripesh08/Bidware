@@ -386,10 +386,8 @@ class SaleDetailsFragment : Fragment() {
     }
     
     private fun calculateBuyerServiceFee(finalBid: Double): Double {
-        // Calculate service fee percentage of the final bid amount or minimum ₹100
-        val serviceFeePercentage = 0.02 // 2% - Change this value to modify the buyer service fee
-        val fee = finalBid * serviceFeePercentage
-        return if (fee < 100) 100.0 else fee
+        // Fixed service fee of ₹700
+        return 700.0
     }
     
     private fun processPayment(amount: Double) {

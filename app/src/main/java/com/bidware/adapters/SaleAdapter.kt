@@ -28,8 +28,7 @@ private const val ADAPTER_TAG = "SaleAdapter"
  * Adapter for displaying Sale items in a RecyclerView with various interaction options
  */
 class SaleAdapter(
-    private val onSaleClick: (Sale) -> Unit,
-    private val onEditClick: ((Sale) -> Unit)? = null
+    private val onSaleClick: (Sale) -> Unit
 ) : ListAdapter<Sale, SaleAdapter.SaleViewHolder>(DIFF_CALLBACK) {
 
     companion object {
@@ -61,9 +60,10 @@ class SaleAdapter(
         private val kilometersText: TextView = itemView.findViewById(R.id.tvKilometers)
         private val statusText: TextView = itemView.findViewById(R.id.tvStatus)
         private val imageView: ImageView = itemView.findViewById(R.id.ivVehicle)
-        private val btnEdit: ImageButton = itemView.findViewById(R.id.btnEdit)
         private val btnPayment: Button = itemView.findViewById(R.id.btnPayment)
         private val currentBidText: TextView? = itemView.findViewById(R.id.tvCurrentBid)
+        private val fuelTypeText: TextView = itemView.findViewById(R.id.tvFuelType)
+        private val locationText: TextView = itemView.findViewById(R.id.tvLocation)
 
         @SuppressLint("SetTextI18n")
         fun bind(sale: Sale) {
@@ -73,6 +73,8 @@ class SaleAdapter(
             priceText.text = sale.displayPrice
             yearText.text = "${sale.year}"
             kilometersText.text = "${sale.kilometers} km"
+            fuelTypeText.text = "Fuel: ${sale.fuelType}"
+            locationText.text = "Location: ${sale.location}"
             
             // Set status text with special handling for approved sales
             if (sale.status == "approved") {
@@ -103,16 +105,8 @@ class SaleAdapter(
             }
             statusText.setTextColor(itemView.context.getColor(statusColor))
             
-            // Show edit button only for pending sales
-            btnEdit.visibility = if (sale.status == "pending" && onEditClick != null) {
-                View.VISIBLE
-            } else {
-                View.GONE
-            }
-            
             // Set up click listeners
             itemView.setOnClickListener { onSaleClick(sale) }
-            btnEdit.setOnClickListener { onEditClick?.invoke(sale) }
             
             // Hide payment button by default
             btnPayment.visibility = View.GONE

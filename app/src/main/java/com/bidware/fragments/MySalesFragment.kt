@@ -159,13 +159,6 @@ class MySalesFragment : Fragment() {
                         showSaleDetails(sale)
                     }
                 }
-            },
-            onEditClick = { sale ->
-                // Open AddSaleFragment for editing
-                parentFragmentManager.beginTransaction()
-                    .replace(R.id.fragmentContainer, AddSaleFragment.newInstance(sale))
-                    .addToBackStack(null)
-                    .commit()
             }
         )
         

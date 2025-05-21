@@ -19,14 +19,14 @@
         <ImageView
             android:id="@+id/ivVehicle"
             android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_height="160dp"
             android:scaleType="centerCrop"
             android:src="@android:drawable/ic_menu_gallery"
             android:background="@color/background_color" />
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
             android:paddingStart="8dp">
@@ -97,6 +97,28 @@
                     android:textColor="@color/white" />
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFuelType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/tvBasePrice"
                 android:layout_width="match_parent"
@@ -120,17 +142,6 @@
                     android:textColor="@color/white"
                     app:backgroundTint="@color/accent_color"
                     android:visibility="gone" />
-
-                <ImageButton
-                    android:id="@+id/btnEdit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    android:contentDescription="Edit"
-                    android:padding="8dp"
-                    android:src="@android:drawable/ic_menu_edit"
-                    android:visibility="gone"
-                    app:tint="@color/white" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
